@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KVEGGIES</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #4CAF50;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      font-size: 3rem;
+      color: #4CAF50;
+    }
+
+    h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #2e7d32;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .plan-card {
+      flex: 1;
+      min-width: 250px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .plan-card h3 {
+      color: #4CAF50;
+      margin-bottom: 1rem;
+    }
+
+    .addons {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .addons label {
+      width: 200px;
+      margin: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .addons input {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #333;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    form {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="logo.png" alt="KVEGGIES Logo" />
+    <div>
+      <a href="#index">index</a>
+      <a href="#about">About</a>
+      <a href="#plans">Plans</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>KVEGGIES</h1>
+    <p style="text-align:center; font-size: 1.2rem;">
+      <strong>Freshness at Your Doorstep!</strong><br>
+      Enjoy hassle-free monthly vegetable subscriptions delivered right to your home.
+    </p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; font-size: 1.1rem; max-width: 800px; margin: auto;">
+      At <strong>KVEGGIES</strong>, we are passionate about providing fresh, handpicked vegetables straight from local farms to your home. 
+      We offer flexible monthly subscription plans that suit families of all sizes. 
+      Our goal is to make healthy living easy and affordable for everyone. <br><br>
+      With options to customize your box, add-on your favorite veggies, and choose the plan that works best for you — KVEGGIES is your trusted partner for farm-fresh goodness.
+    </p>
+  </section>
+
+  <!-- Plans with Add-ons and Submit -->
+  <section id="plans">
+    <h2>Choose a Plan</h2>
+    
+    <form action="mailto:kveggies51@mail.com" method="post" enctype="text/plain">
+      <div class="plans">
+        <!-- Basic Plan -->
+        <div class="plan-card">
+          <h3>Basic Plan</h3>
+          <p>Includes: Tomato, Onion, Potato, Chilli, Garlic, Ginger, Brinjal, Drumstick</p>
+          <input type="radio" name="Selected Plan" value="Basic Plan" required> Select Basic Plan
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan-card">
+          <h3>Standard Plan</h3>
+          <p>Includes: Tomato, Onion, Potato, Bottle Gourd, Beans, Brinjal, Ginger, Cauliflower</p>
+          <input type="radio" name="Selected Plan" value="Standard Plan" required> Select Standard Plan
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card">
+          <h3>Premium Plan</h3>
+          <p>Includes: Tomato, Onion, Potato, Brinjal, Bottle Gourd, Bitter Gourd, Cabbage, Cauliflower</p>
+          <input type="radio" name="Selected Plan" value="Premium Plan" required> Select Premium Plan
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <h2 style="margin-top:2rem;">Add-on Vegetables</h2>
+      <div class="addons">
+        <label><input type="checkbox" name="Add-ons" value="Tomato"> Tomato</label>
+        <label><input type="checkbox" name="Add-ons" value="Onion"> Onion</label>
+        <label><input type="checkbox" name="Add-ons" value="Potato"> Potato</label>
+        <label><input type="checkbox" name="Add-ons" value="Chilli"> Chilli</label>
+        <label><input type="checkbox" name="Add-ons" value="Garlic"> Garlic</label>
+        <label><input type="checkbox" name="Add-ons" value="Ginger"> Ginger</label>
+        <label><input type="checkbox" name="Add-ons" value="Brinjal"> Brinjal</label>
+        <label><input type="checkbox" name="Add-ons" value="Drumstick"> Drumstick</label>
+        <label><input type="checkbox" name="Add-ons" value="Bottle Gourd"> Bottle Gourd</label>
+        <label><input type="checkbox" name="Add-ons" value="Bitter Gourd"> Bitter Gourd</label>
+        <label><input type="checkbox" name="Add-ons" value="Beans"> Beans</label>
+        <label><input type="checkbox" name="Add-ons" value="Cabbage"> Cabbage</label>
+        <label><input type="checkbox" name="Add-ons" value="Cauliflower"> Cauliflower</label>
+      </div>
+
+      <button type="submit">Submit Selection</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:kveggies51@mail.com">kveggies51@mail.com</a></p>
+      <div class="social-icons">
+        <a href="https://instagram.com/kveggies_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/kveggies_" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 KVEGGIES. All rights reserved.
+  </footer>
+
+</body>
+</html>
